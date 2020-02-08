@@ -1,0 +1,16 @@
+<h1>upload a pdf to get a booky</h1>
+
+<%= form_with url: bookys_path, multipart: true, scope: :booky, local: true do |form| %>
+
+<label>
+  <p>Choose a pdf</p>
+  <%= file_field_tag(:pdf) %>
+</label>
+
+
+<label>
+  <p>Then click to receive booky</p>
+  <%= submit_tag('Get booky') %>
+</label>
+
+<% end %>
